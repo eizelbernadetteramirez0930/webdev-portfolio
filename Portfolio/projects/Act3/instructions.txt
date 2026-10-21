@@ -1,0 +1,14 @@
+header with student profile (welcome message)
+
+student information (name, course, year level)
+
+3 buttons (first button - first click - naiiba message 
+
+(second button - up down button with color
+
+(third button
+
+dropdown course maiiba rin
+
+class .
+id #

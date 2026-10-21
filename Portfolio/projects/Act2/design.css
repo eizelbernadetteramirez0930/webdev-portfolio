@@ -1,0 +1,182 @@
+/* Smooth Scroll & Base Setup */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fbfbfb;
+  color: #000000;
+}
+
+/* Header Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* Green Underline on Hover and Active State */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:target,
+.nav-link.active {
+  border-bottom-color: #006241; /* Starbucks Green */
+}
+
+/* Page Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-block {
+  margin-bottom: 60px;
+  scroll-margin-top: 90px;
+}
+
+.section-block h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-block p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #404040;
+}
+
+/* Menu Top Bar with Search */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-header h1 {
+  font-size: 28px;
+}
+
+/* Side Menu Layout */
+.menu-layout {
+  display: flex;
+  gap: 50px;
+}
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  color: #000;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.sidebar ul li a:hover {
+  color: #006241;
+}
+
+/* Main Grid & Items */
+.menu-content {
+  flex-grow: 1;
+}
+
+.category-title {
+  font-size: 22px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Dark Green Circle replacing image */
+.green-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #003822; /* Official Starbucks dark green circle */
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+
+/* Footer Banner */
+footer {
+  background-color: #004d25;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  margin-top: 40px;
+}

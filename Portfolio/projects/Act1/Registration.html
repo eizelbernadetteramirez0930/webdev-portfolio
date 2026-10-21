@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration</h1>
+    <p>Please fill out the form to start your enrollment process.</p>
+  </header>
+
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="Registration.html" class="active">Registration</a>
+    <a href="Grades.html">Grades</a>
+    <a href="Profile.html">Profile</a>
+  </nav>
+
+  <main>
+    <section>
+      <form class="registration-form">
+        <h2>Student Registration Form</h2>
+
+        <label for="student-name">Student Name</label>
+        <input type="text" id="student-name" name="student-name" placeholder="Enter Name"/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email"/>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password"/>
+
+        <fieldset class="gender">
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+        </fieldset>
+
+
+        <fieldset class="courses">
+        <label for="course">Course</label>
+        <select id="course" name="course">
+          <option value="" selected disabled>Select Course</option>
+          <option value="BSCS">Bachelor of Science in Computer Science</option>
+          <option value="BSIT">Bachelor of Science in Information Technology</option>
+          <option value="BSTM">Bachelor of Science in Tourism Management</option>
+          <option value="BSHM">Bachelor of Science in Hospitality Management</option>
+          <option value="BSOA">Bachelor of Science in Office Administration</option>
+          <option value="BSENTREP">Bachelor of Science in Entrepreneurship</option>
+          </fieldset>
+        </select>
+
+        <fieldset class="skills">
+          <legend>Skills</legend>
+          <label><input type="checkbox" name="skills" value="html" /> HTML</label>
+          <label><input type="checkbox" name="skills" value="css" /> CSS</label>
+          <label><input type="checkbox" name="skills" value="javascript" /> JavaScript</label>
+        </fieldset>
+
+        <label for="profile-picture">Profile Picture</label>
+        <input type="file" id="profile-picture" name="profile-picture" />
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created @ COMLab 1: Ramirez_CS31A </p>
+  </footer>
+
+</body>
+</html>

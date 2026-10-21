@@ -1,0 +1,166 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1  id="title">Hello BSCS31A</h1>
+        <p class="intro">Welcome to JQuery</p>
+
+        <p id="message">Output:</p>
+
+        <p>Walang kanin buseng!?</p>
+
+        <input type="text" id="name"
+
+        placeholder="Type your name">
+
+        <br><br>
+
+        <select id="course">
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSIS">BSIS</option>
+        </select>
+
+        <button id="btn">Click me Button</button>
+
+        <button id="btn2">Sample Button</button>
+
+        <style>
+            body{
+                .card{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: center;
+                    background-color: rgb(187, 121, 165);
+                    color: white;
+                    margin: auto;
+                    border: solid  2px #81597c;
+                    border-radius: 25px;
+                    padding: 25px;
+                    border: none;
+                }
+                button{
+                    padding: 15px 20px;
+                    background-color: rgb(238, 167, 177);
+                    color: rgb(114, 9, 91);
+
+                }
+                
+            }
+        </style>
+
+        <br><br>
+
+        <table border="2" align="center" id="table">
+            <tr>
+                <th>Sample Data</th>
+                <th>Sample Data</th>
+                <th>Sample Data</th>
+                <th>Sample Data</th>
+                <th>Sample Data</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+             <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+             <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+             <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+             <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+JS
+
+$(document).ready(function(){
+    $("#title").text("Good Morning!")
+$("p.intro").css("color","pink")
+//$("*").css("background", "pink")
+$(".btn2").click(function(){
+    $(this).css("background", "violet")
+})
+$("[href]").css("color", "blue")
+$("ul li:first-child").css("color", "black")
+
+$("th").css("background", "violet")
+
+$("tr:even").css("background", "lightblue")
+
+$("tr:odd").css("background", "lightpink")
+
+$("#btn").click(function(){
+    $("#message").text("You Clicked the button!")
+})
+$("#btn").dblclick(function(){
+    $("#message").text("You double click the button!")
+})
+$("#btn").mouseenter(function(){
+    $("#message").text("Your mouse reched the button")
+})
+$("#btn").mouseleave(function(){
+    $("#message").text("Your mouse left the button")
+})
+$("#btn").mousedown(function(){
+    $(this).css("background", "white")
+})
+$("#btn").mouseup(function(){
+    $(this).css("background", "violet")
+})
+$("#name").focus(function(){
+    $("#message").text("You select the text input")
+    $(this).css("background", "lightyellow")
+})
+$("#name").blur(function(){
+    $("#message").text("You leave the text input")
+    $(this).css("background", "white")
+})
+
+$("course").change(function(){
+    $("#message").text($(this).val())
+})
+$("#btn2").click(function(){
+    $("#table").hide("slow")
+})
+$("#btn2").dblclick(function(){
+    $("#table").show(2000)
+})
+})

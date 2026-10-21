@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Light Pink Center Container Card */
+        .card {
+            background-color: #fbcfe8;
+            width: 320px;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(190, 24, 93, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Pink Load Button */
+        button {
+            background-color: #db2777;
+            color: #ffffff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #be185d;
+        }
+
+        #message {
+            color: #db2777;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin: 20px 0 25px;
+        }
+
+        .status-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .status-item {
+            color: #000000;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* Status items styled in pink while loading */
+        .status-item.active {
+            color: #db2777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>JavaScript Demo</h1>
+
+        <button id="loadBtn">Load</button>
+
+        <p id="message">Waiting...</p>
+
+        <div class="status-list">
+            <p id="profile" class="status-item">Profile</p>
+            <p id="grades" class="status-item active">Grades</p>
+            <p id="schedule" class="status-item">Schedule</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

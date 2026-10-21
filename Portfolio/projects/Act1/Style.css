@@ -1,0 +1,161 @@
+body{
+    background-color: bisque;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgb(236, 139, 172);
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ab033b;
+}
+
+nav{
+    background-color: rgb(207, 99, 151);
+    gap: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: #920232;
+    font-weight: 550;
+}
+
+main{
+    padding: 10px;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.home-layout {
+    display: flex;
+}
+
+.welcome-card,
+.announcements-card {
+      background-color: pink;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px;
+        margin: 10px;
+}
+
+.registration-form {
+    background-color:pink;
+    border-radius: 6px;
+    padding: 30px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.registration-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 550;
+    color: black;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form select,
+.registration-form textarea,
+.registration-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color:rgb(249, 206, 230);
+    font-family: inherit;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.course{
+    border: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.gender,
+.skills {
+      gap: 15px;
+      display: flex;
+}
+
+.registration-form button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: medium;
+  font-weight: 300;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px;
+}
+
+thead th {
+  color: #920232;
+  font-weight: 550;
+  padding: 12px;
+  text-align: center;
+}
+
+tbody td{
+  padding: 12px;
+  text-align: center;
+}
+
+tfoot td{
+  padding: 12px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.profile-card{
+  background-color: pink;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d14977;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 550;
+}
+
+footer{
+    background-color: rgb(134, 39, 54);
+    text-align: center;
+    padding: 10px;
+    color:antiquewhite;
+}
+
+

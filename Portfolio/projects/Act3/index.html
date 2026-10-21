@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1  id="main-title">My Student Profile</h1>
+        <p class="subtitle">Welcome to my interactive profile!</p>
+
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f5f1;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container{
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        h1{
+            text-align: center;
+            color: #7b8778;
+            margin-bottom: 5px;
+            font-size: 2em;
+        }
+        .subtitle{
+            text-align: center;
+            color: #8c9a89;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        h2{
+            color: #8c9a89;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        .profile-info{
+            margin-bottom: 40px;
+        }
+        .profile-info p{
+            margin: 8px 0;
+            color: #8c9a89;
+            font-weight: bold;
+        }
+    </style>
+
+        <div class="profile-info" id="profile-div">
+            
+            <h3>Student Information</h1>
+                <p>Name: <span>Eizel Bernadette Ramirez</span></p>
+                <p>Course: <span>BSCS</span></p>
+                <p>Year Level: <span>3rd Year</span></p>
+        </div>
+
+        <div class="btn-group">
+            <button id="btn">Change Title</button>
+            <button id="btn2">Hide Profile</button>
+            <button id="btn3">Show Profile</button>
+        </div>
+    
+        <p class="status-message" id="action-status">Interact with buttons above</p>
+
+        <div class="course=selection">
+            <h2>Choose Your Course</h2>
+            <select id="course-select">
+                <option value="disabled selected"></option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSIS">BSIS</option>
+            </select>
+            <p class="course-msg">You selected <span id="course-select"></span></p>
+        </div>
+
+        <div class="student-list">
+            <h2>Student List</h2>
+            <p>Registered Students:</p>
+            <table border="2" align="center" id="table">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>BSCS</td>
+                <td>3rd Year</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>Pedro</td>
+                <td>BSIS</td>
+                <td>2nd Year</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>Ana</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+        </table>
+        <p>End of students list</p>
+        </div>
+
+        <div class="btn-group">
+            <button id="btn-odd">Apply Odd Rows</button>
+            <button id="btn-even">Apply Even Rows</button>
+        </div>
+        <p class="status-msg" id="table-status"></p>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
